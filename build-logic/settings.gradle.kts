@@ -18,6 +18,7 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
+        mavenLocal()
     }
 }
 
@@ -31,6 +32,7 @@ dependencyResolutionManagement {
             }
         }
         mavenCentral()
+        mavenLocal()
     }
     versionCatalogs {
         create("libs") {
