@@ -28,7 +28,18 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+plugins {
+    id("com.gradle.develocity") version "4.0.2"
+}
 
+develocity {
+    server = "https://ge.solutions-team.gradle.com/"
+    allowUntrustedServer = true
+    buildScan {
+        uploadInBackground.set(false)
+        publishing { true }
+    }
+}
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
